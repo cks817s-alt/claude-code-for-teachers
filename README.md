@@ -12,3 +12,7 @@
 - 화면은 `assets/app.js`, 모양은 `assets/style.css`.
 - 진행 기록([다 했어요])과 글자 크기는 방문자의 브라우저(localStorage)에만 저장되고, 서버로 보내는 정보는 없습니다.
 - 로컬에서 보기: 이 폴더에서 `python -m http.server` → http://localhost:8000
+
+## 작업 기록
+
+구조, 내용 추가법, 디자인 토큰, 남은 일은 [작업기록.md](작업기록.md)에 있습니다.

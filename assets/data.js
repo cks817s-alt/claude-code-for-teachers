@@ -585,3 +585,12 @@ window.SAFETY = [
   ['✋', '되돌리기 어려운 일은 직접', '삭제·제출·결재·결제·메일 보내기처럼 되돌리기 어려운 일은 클로드에게 맡기지 말고 직접 확인하고 누릅니다.'],
   ['©️', '저작권 지키기', '교과서·문제집의 그림이나 지문을 공개 사이트에 그대로 올리지 않습니다. 출처를 밝히고, 직접 만든 자료를 씁니다.'],
 ];
+
+// 카드 썸네일에 보이는 한 줄(명령이나 요청). 새 카드를 만들면 여기에 한 줄 추가(없으면 첫 단계의 핵심어가 보임).
+const COVER = {
+  K01: 'irm https://claude.ai/install.ps1 | iex', K02: 'claude', K03: '/model', K04: 'npm install -g firebase-tools',
+  K05: 'gh repo create --public --push', K06: '단원 콘텐츠함 첫 화면 만들어 줘', K07: 'clasp login', K08: 'GEMINI_API_KEY=AQ.••••••',
+  K09: '루브릭으로 피드백 초안 만들어 줘', K10: 'firebase deploy', K11: '학교 계정만 로그인되게 해 줘', K12: '답안 PDF 에 O·X 첨삭해 줘',
+  K13: '응답기록.csv 분석해 줘', K14: '결과보고서.hwpx 채워 줘', K15: '1분 소개 영상 만들어 줘', K16: '체크리스트로 점검해 줘', K17: '드라이브 자료로 정리해 줘',
+};
+window.CARDS.forEach((c) => { c.cover = c.cover || COVER[c.id] || (c.steps[0] && c.steps[0].key) || ''; });

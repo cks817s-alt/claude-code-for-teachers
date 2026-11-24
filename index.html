@@ -5,7 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>선생님을 위한 클로드 코드</title>
 <meta name="description" content="처음 쓰는 선생님도 따라 할 수 있는 클로드 코드(Claude Code) 단계별 안내 — 설치부터 수업 도구·실시간 수업 앱·업무 자동화까지">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23233154'/%3E%3Ctext x='32' y='44' font-size='34' text-anchor='middle' fill='%23ffb547' font-family='monospace' font-weight='700'%3E%3E_%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230d0c22'/%3E%3Ctext x='32' y='42' font-size='28' text-anchor='middle' fill='%23ea4c89' font-family='monospace' font-weight='700'%3E%3E_%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wght@400..800&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -14,26 +17,33 @@
   <div class="in">
     <a class="brand" href="#/" aria-label="처음 화면으로">
       <span class="mark" aria-hidden="true">&gt;_</span>
-      <span class="tt"><b>선생님을 위한 클로드 코드</b><small>설치부터 수업 도구까지, 따라 하며 익히는 단계별 안내</small></span>
+      <span class="tt">선생님을 위한 <b>클로드 코드</b></span>
     </a>
     <nav class="topnav" aria-label="바로 가기">
-      <a href="#/cheat">⌨️ 명령어</a>
-      <a href="#/faq">🆘 막혔을 때</a>
-      <a href="#/safety">🛡️ 안전 수칙</a>
+      <a href="#/">과정</a>
+      <a href="#/cheat">명령어</a>
+      <a href="#/faq">막혔을 때</a>
+      <a href="#/safety">안전 수칙</a>
     </nav>
-    <div class="fz" role="group" aria-label="글자 크기">
-      <button type="button" data-fz="-1" title="글자 작게">가-</button>
-      <button type="button" data-fz="1" title="글자 크게">가+</button>
+    <div class="right">
+      <div class="fz" role="group" aria-label="글자 크기">
+        <button type="button" data-fz="-1" title="글자 작게" aria-label="글자 작게">가<sup>−</sup></button>
+        <button type="button" data-fz="1" title="글자 크게" aria-label="글자 크게">가<sup>+</sup></button>
+      </div>
+      <a class="pill dark sm" href="#/card/K01">시작하기</a>
     </div>
   </div>
-  <div class="band"></div>
 </header>
 
 <main id="view" tabindex="-1"></main>
 
-<footer>
-  <p>이 사이트의 [다 했어요] 기록은 <b>지금 쓰는 브라우저에만</b> 저장됩니다. 서버로 보내는 정보는 없어요.</p>
-  <p class="small">클로드 코드는 계속 업데이트됩니다. 화면이나 명령이 조금 다르면 클로드 코드 안에서 <code>/help</code> 로 확인하세요.</p>
+<footer class="foot">
+  <div class="in">
+    <a class="brand" href="#/"><span class="mark" aria-hidden="true">&gt;_</span><span class="tt">선생님을 위한 <b>클로드 코드</b></span></a>
+    <p class="lead">설치부터 수업 도구까지, 복사하고 붙여 넣으며 익히는 클로드 코드 안내서</p>
+    <nav class="fnav"><a href="#/">과정</a><a href="#/cheat">명령어 한눈에</a><a href="#/faq">막혔을 때</a><a href="#/safety">안전 수칙</a></nav>
+    <p class="small">[다 했어요] 기록은 지금 쓰는 브라우저에만 저장되고, 서버로 보내는 정보는 없습니다. 클로드 코드는 계속 업데이트되니 화면이나 명령이 조금 다르면 <code>/help</code> 로 확인하세요.</p>
+  </div>
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
